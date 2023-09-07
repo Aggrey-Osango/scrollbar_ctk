@@ -10,7 +10,7 @@ app.geometry("600x520")
 app.title ("Helium Notes")
 
 # Frame Initialization
-frame = ctk.CTkFrame (master = app, width = 590, height = 510, corner_radius = 5)
+frame = ctk.CTkFrame (master = app, width = 590, height = 510, corner_radius = 10)
 frame.pack(padx=10, pady=10)
 
 # TextBox Initialization
@@ -27,8 +27,10 @@ def save ():
 btn_01 = ctk.CTkButton(master = frame, text = "Save", command = save)
 btn_01.grid(padx=5, pady=5)
 
+# Adding a label obj to the frame
+lbl_01 = ctk.CTkLabel (master = frame, width = 50,text = "Name",
+                       bg_color = ("white", "grey75"), corner_radius = 10)
 
-lbl_01 = ctk.CTkLabel (master = frame, width = 50, corner_radius = 5,text = "Name")
 lbl_01.grid(padx=5, pady=5)
 
 if __name__ == '__main__':
