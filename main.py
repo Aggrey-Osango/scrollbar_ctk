@@ -27,5 +27,9 @@ def save ():
 btn_01 = ctk.CTkButton(master = frame, text = "Save", command = save)
 btn_01.grid(padx=5, pady=5)
 
+
+lbl_01 = ctk.CTkLabel (master = frame, width = 50, corner_radius = 5,text = "Name")
+lbl_01.grid(padx=5, pady=5)
+
 if __name__ == '__main__':
     app.mainloop ()
